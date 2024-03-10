@@ -15,7 +15,7 @@ export default function Page() {
         <AcmeLogo />
       </div>
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
+        <div className="flex flex-col justify-center gap-4 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
           <div
             className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"
           />
@@ -27,36 +27,15 @@ export default function Page() {
             , brought to you by Vercel.
           </p>
 
-          <div
-            className={`${kanit.className} flex flex-row items-center leading-none`}
-          >
-            <SimIcon />
-            <LogoIcon />
-
-            <p className="text-[24px] ml-3">SIM Status Report</p>
-
-          </div>
-
-          <p
-            className={`${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}
-          >
-            Hey boy
-          </p>
-
-          <LogoIcon />
-          <SimIcon />
-          <LogoIcon />
-
-          <div className={styles.shape}></div>
 
           <Link
-            href="/login"
+            href="/dashboard"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
-            <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
+            <span>Dashboard</span> <ArrowRightIcon className="w-5 md:w-6" />
           </Link>
         </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
+        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-8">
           {/* Add Hero Images Here */}
           <Image
             src="/hero-desktop.png"
